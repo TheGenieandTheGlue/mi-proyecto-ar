@@ -2,7 +2,7 @@
 <html>
 <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://rawgit.com/jeromeetienne/ar.js/1.7.2/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/ar.js@1.7.2/aframe/build/aframe-ar.min.js"></script>
     <style>
         body { margin: 0; overflow: hidden; }
     </style>
@@ -10,7 +10,7 @@
 <body>
     <a-scene embedded arjs>
         <!-- Cámara AR -->
-        <a-marker preset="custom" type="pattern" url="marker.patt">
+        <a-marker preset="custom" type="pattern" url="marker_qr.patt">
             <!-- Video flotante en AR -->
             <a-video src="tu-video.mp4" autoplay loop muted position="0 0 0" rotation="-90 0 0" width="1" height="0.5"></a-video>
         </a-marker>
